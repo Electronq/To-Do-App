@@ -56,11 +56,10 @@ body{
     color:grey;
     border-radius: 0.5rem;
 }
-
-.projList>*:hover, .addProj:hover{
+.projCard:hover,.addProj:hover{
     cursor:pointer;
     background-color: rgb(212, 212, 212);
-    transition: 400ms ease-in-out;
+    transition: 200ms ease-in-out;
 }
 
 .default, .projCard{
@@ -68,13 +67,6 @@ body{
     gap:5px;
     justify-content: space-around;
     align-items: center;
-    transition: 200ms ease-in-out;
-}
-
-.projCard:focus{
-    font-weight: 900;
-    border: 1px solid rgb(158, 158, 158);
-    
 }
 
 
@@ -303,3 +295,8 @@ body{
     color:white;
 }
 
+.clicked{
+    background-color: #e9e9e9;
+    font-weight: 900;
+    border: 1px solid rgb(158, 158, 158);
+}

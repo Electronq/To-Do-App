@@ -131,7 +131,9 @@ const computer = (()=>{
                 const grandParent = parent.parentNode;
                 const pos = Array.prototype.indexOf.call(grandParent.children,parent)
                 value.setAttribute('listener','true')
+                
                 value.addEventListener('click',()=>{
+                    value.classList.add('clicked')
                     currentProject = value.childNodes[0].textContent
                     display.update(currentProject,value)
                     if(!value.children[0]){
@@ -143,6 +145,7 @@ const computer = (()=>{
                     if(value.children[0]){
                         value.removeChild(value.children[0])
                     }
+                    value.classList.remove('clicked')
     
                 })
             }
